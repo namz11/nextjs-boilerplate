@@ -1,12 +1,12 @@
 import * as _ from "lodash";
 // Check if String is Number
-const StringIsNumber = (value) => Number.isNaN(Number(value)) === false;
+const StringIsNumber = (value: string) => Number.isNaN(Number(value)) === false;
 
 // Convert enum into array
-const EnumToArray = (enumme) => Object.keys(enumme).map((key) => enumme[key]);
+const EnumToArray = (enumme: any) => Object.keys(enumme).map((key) => enumme[key]);
 
 // Convert to proper string
-const makeString = (value) => {
+const makeString = (value: string) => {
   if (value === null || value === undefined) {
     return "";
   }
